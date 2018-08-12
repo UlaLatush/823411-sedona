@@ -5,8 +5,95 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+	<div class="wrapper"> <!-- Чтобы контент размещался по центру страницы и отбрасывал тень -->
+	<header class="main-header"> <!-- Правильно ли вешать стили на семантические теги -->
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li><a href="">информация</a></li>
+				<li><a href="">фото и видео</a></li>
+			</ul>  
+			<img src="http://placehold.it/150x100">  <!-- Как делать такое меню? Есть ли смысл разрезать его отдельными дивами или не надо? -->  
+			<ul class="site-navigation">
+				<li><a href="">карта штата</a></li>
+				<li><a href="">гостиницы</a></li>
+			</ul>
+		</nav>
+		<img src="http://placehold.it/150x100"> <!-- Изображение относится к логотипу? -->
+	</header>
+	<main>
+		<article>
+			<header><!-- Нужен ли здесь хедер? -->
+				<h1>седона - это небольшой городок в аризоне, заслуживающий большего </h1>
+				<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-1-3">
+						<section>
+							<h1>настоящий городок</h1>
+							<p>-N1-<br>седона - не атракцион для туристов, там течет своя жизнь</p>
+						</section>
+					</div>
+					<div class="col-2-3"><img src="http://placehold.it/150x100"></div>
+				</div>
+				<div class="row">
+					<div class="col-1-3">
+						<img src="http://placehold.it/150x100"> <!-- Есть ли смысл поместить это изображение в CSS как бекграунд к диву? -->
+						<section>
+							<h1>жилье</h1>
+							<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+						</section>
+					</div>
+					<div class="col-1-3">
+						<img src="http://placehold.it/150x100">
+						<section>
+							<h1>еда</h1>
+							<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</section>
+					</div>
+					<div class="col-1-3">
+						<img src="http://placehold.it/150x100">
+						<section>
+							<h1>сувениры</h1>
+							<p>не только китайского, но и местного производства!</p>
+						</section>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2-3"><img src="http://placehold.it/150x100"></div>
+					<div class="col-1-3">
+						<section>
+							<h1>там есть мост дъявола</h1>
+							<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</article>
+		<div class="container-form">
+			<div class="form-title">
+				<h1>заинтересовались?</h1>
+				<p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			</div>
+			<div class="form-map">
+				<img src="http://placehold.it/150x100">
+			</div>
+			<div class="form-search"> <!-- Выполнить форму поиска в виде дива с абсолютным позиционированием? -->
+				<!-- Тут должна быть форма -->
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div>#visitsedona</div>
+		<div><img src="http://placehold.it/150x100"></div>
+		<div><img src="http://placehold.it/150x100"></div>
+	</footer>
+	</div>
   </body>
 </html>
+
+
+
+
+
+
