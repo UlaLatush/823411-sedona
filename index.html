@@ -2,69 +2,68 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href='css/index-style.css' rel='stylesheet' type='text/css'>
     <title>HTML Academy: Седона</title>
   </head>
   <body>
 	<div class="wrapper"> <!-- Чтобы контент размещался по центру страницы и отбрасывал тень -->
-	<header class="main-header"> 
+	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li><a href="#">информация</a></li>
 				<li><a href="#">фото и видео</a></li>
-			</ul>  
-			<img src="http://placehold.it/150x100">  <!-- Как делать такое меню? Есть ли смысл разрезать его отдельными дивами или не надо? -->  
+			</ul>
+			<img src="img/logo.png">  <!-- Как делать такое меню? Есть ли смысл разрезать его отдельными дивами или не надо? -->
 			<ul class="site-navigation">
 				<li><a href="#">карта штата</a></li>
 				<li><a href="#">гостиницы</a></li>
 			</ul>
 		</nav>
-		<img src="http://placehold.it/150x100"> <!-- Изображение относится к логотипу? -->
+    <img src="img/welcome.png" class="welcome-img">
+    <img src="img/polygon.png" class="polygon-img">
 	</header>
 	<main>
 		<article>
-			<header><!-- Нужен ли здесь хедер? -->
+			<header class="main-title"><!-- Нужен ли здесь хедер? -->
 				<h1>седона - это небольшой городок в аризоне, заслуживающий большего </h1>
 				<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
 			</header>
-			<div class="container">
+			<div class="container-grid">
 				<div class="row">
-					<div class="col-1-3">
+					<div class="col-1-3 colblue">
 						<section>
 							<h3>настоящий городок</h3>
 							<p>-N1-<br>седона - не атракцион для туристов, там течет своя жизнь</p><!-- N1 в див. -->
 						</section>
 					</div>
-					<div class="col-2-3"><img src="http://placehold.it/150x100"></div>
+					<div class="col-2-3"><img src="img/sedona-1.jpg" width="512" height="256"></div>
 				</div>
 				<div class="row">
 					<div class="col-1-3">
-						<img src="http://placehold.it/150x100"> 
+						<img src="img/icon-1.svg" alt="">
 						<section>
-							<img src="" alt="">
 							<h3>жилье</h3>
 							<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 						</section>
 					</div>
 					<div class="col-1-3">
-						<img src="http://placehold.it/150x100">
+						<img src="img/icon-2.svg" alt="">
 						<section>
-							<img src="" alt="">
 							<h3>еда</h3>
 							<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</section>
 					</div>
 					<div class="col-1-3">
-						<img src="http://placehold.it/150x100">
+						<img src="img/icon-3.svg" alt="">
 						<section>
-							<img src="" alt="">
 							<h3>сувениры</h3>
 							<p>не только китайского, но и местного производства!</p>
 						</section>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-2-3"><img src="http://placehold.it/150x100"></div>
-					<div class="col-1-3">
+					<div class="col-2-3"><img src="img/sedona-2.jpg" width="512" height="256"></div><!--нужно ли указывать размеры картинок в html-коде?-->
+					<div class="col-1-3 colblue">
 						<section>
 							<h3>там есть мост дъявола</h3>
 							<p>да, по нему можно пройти! если конечно вы осмелитесь</p>
@@ -79,7 +78,7 @@
 				<p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			</div>
 			<div class="form-map">
-				<img src="http://placehold.it/150x100">
+				<img src="img/map.jpg">
 			</div>
 			<div class="form-search"> <!-- Выполнить форму поиска в виде дива с абсолютным позиционированием? -->
 				<!-- Тут должна быть форма -->
@@ -89,22 +88,17 @@
 	<footer>
 		<div>#visitsedona</div>
 		<div>
-			<ul>
-				<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-				<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-				<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
+			<ul class="social-networks">
+				<li><a href="#"><img src="img/twitter.svg"></a></li>
+				<li><a href="#"><img src="img/fb-icon.svg"></a></li>
+				<li><a href="#"><img src="img/youtube.svg"></a></li>
 			</ul>
 		</div>
 		<div>
-			<a href="#"><img src="http://placehold.it/150x100"></a>
+      <p>website by</p>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px"></a>
 		</div>
 	</footer>
 	</div>
   </body>
 </html>
-
-
-
-
-
-

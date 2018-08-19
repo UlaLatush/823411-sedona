@@ -2,17 +2,18 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href='css/hotels-style.css' rel='stylesheet' type='text/css'>
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  <div class="wrapper"> 
-	<header class="main-header"> 
+  <div class="wrapper">
+	<header class="main-header">
 		<nav class="main-navigation">
 			<ul class="site-navigation">
 				<li><a href="#">информация</a></li>
 				<li><a href="#">фото и видео</a></li>
-			</ul>  
-			<img src="http://placehold.it/150x100">  <!-- Как делать такое меню? Есть ли смысл разрезать его отдельными дивами или не надо? -->  
+			</ul>
+			<img src="img/logo.png">
 			<ul class="site-navigation">
 				<li><a href="#">карта штата</a></li>
 				<li><a href="#">гостиницы</a></li>
@@ -31,17 +32,17 @@
 				</div>
 			</div>
 			<div>
-				<button><img src="" alt=""></button>
-				<button><img src="" alt=""></button>
+				<button><img src="img/icon-up-dir.svg" alt=""></button>
+				<button><img src="img/icon-down-dir.svg" alt=""></button>
 			</div>
 		</div>
 		<div class="hotels">
 			<div class="hotel">
 				<div class="hotel-img">
-					<img src="" alt="">
+					<img src="img/hotel1.jpg" alt="">
 				</div>
 				<div class="hotel-info">
-					<h3>Amara</h3>
+					<h3>Amara resort&spa</h3>
 					<div class="hotel-innerwrap">
 						<div class="hotel-type"></div>
 						<div class="hotel-price"></div>
@@ -56,13 +57,64 @@
 					<div class="hotel-rating-label"></div>
 				</div>
 			</div>
+      <div class="hotel">
+				<div class="hotel-img">
+					<img src="img/hotel2.jpg" alt="">
+				</div>
+				<div class="hotel-info">
+					<h3>Desert Quail inn</h3>
+					<div class="hotel-innerwrap">
+						<div class="hotel-type"></div>
+						<div class="hotel-price"></div>
+					</div>
+					<div class="hotel-buttons">
+						<a href="#">подробнее</a>
+						<a href="#">забронировать</a>
+					</div>
+				</div>
+				<div class="hotel-rating">
+					<div class="hotel-rating-stars"></div>
+					<div class="hotel-rating-label"></div>
+				</div>
+			</div>
+      <div class="hotel">
+				<div class="hotel-img">
+					<img src="img/hotel3.jpg" alt="">
+				</div>
+				<div class="hotel-info">
+					<h3>villas at poco diablo</h3>
+					<div class="hotel-innerwrap">
+						<div class="hotel-type"></div>
+						<div class="hotel-price"></div>
+					</div>
+					<div class="hotel-buttons">
+						<a href="#">подробнее</a>
+						<a href="#">забронировать</a>
+					</div>
+				</div>
+				<div class="hotel-rating"> <!--У каждой гостиницы здесь должен быть свой класс? чтобы сделать разный фон со звездами? Логичнее поместить звезды на бэкграунд с повторением?-->
+					<div class="hotel-rating-stars"></div>
+					<div class="hotel-rating-label"></div>
+				</div>
+			</div>
 		</div>
-		
-		
-		
 	</main>
+  <footer>
+		<div>#visitsedona</div>
+		<div >
+			<ul class="social-network">
+				<li><a href="#"><img src="img/twitter.svg"></a></li>
+				<li><a href="#"><img src="img/fb-icon.svg"></a></li>
+				<li><a href="#"><img src="img/youtube.svg"></a></li>
+			</ul>
+		</div>
+		<div>
+      <p> website by </p>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px"></a>
+		</div>
+	</footer>
+	</div>
   </div>
-  
+
   </body>
   </html>
-  
