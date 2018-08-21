@@ -6,3 +6,17 @@
   display:block;
 
 }
+fieldset {
+   border:0 none;
+}
+li {
+    list-style-type: none;
+    background-image:
+}
+.checkbox-on>li {
+background-image: url(img/checkbox-on.svg);
+
+}
+.checkbox {
+ background-image: url(img/background-form-hotels.jpg);
+ background-color: grey;

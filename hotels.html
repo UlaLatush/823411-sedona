@@ -13,7 +13,7 @@
 				<li><a href="#">информация</a></li>
 				<li><a href="#">фото и видео</a></li>
 			</ul>
-			<img src="img/logo.png">
+			<img src="img/logo.png" width="140" height="71" alt="Логотип">
 			<ul class="site-navigation">
 				<li><a href="#">карта штата</a></li>
 				<li><a href="#">гостиницы</a></li>
@@ -21,6 +21,62 @@
 		</nav>
 	</header>
 	<main>
+  <div class="form">
+  <form class="filter" method="get" action="https:echo.htmlacademy.ru">
+    <fieldset>
+      <legend>Инфраструктура</legend>
+  <ul>
+    <li>
+      <input type="checkbox" name="pool"  id="filter-pool">
+      <label for="filter-pool">
+        Бассейн
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" name="parking"  id="filter-parking">
+      <label for="filter-parking">
+        Парковка
+      </label>
+    </li>
+    <li>
+      <input type="checkbox" name="wi-fi"  id="filter-wi-fi">
+      <label for="filter-wi-fi">
+        wi-fi
+      </label>
+    </li>
+  </ul>
+   </fieldset>
+   <fieldset>
+     <legend>Тип жилья</legend>
+ <ul class="checkbox-on">
+   <li>
+     <input type="checkbox" name="hotel"  id="filter-hotel">
+     <label for="filter-hotel">
+       Гостиница
+     </label>
+   </li>
+   <li>
+     <input type="checkbox" name="motel"  id="filter-motel">
+     <label for="filter-motel">
+       Мотель
+     </label>
+   </li>
+   <li>
+     <input type="checkbox" name="apartment"  id="filter-apartment">
+     <label for="filter-apartment">
+       Апартаменты
+     </label>
+   </li>
+ </ul>
+  </fieldset>
+</form>
+  <label>
+  <input type="range" name="radio" min="0" max="3000" step="1">
+</label>
+
+
+
+</div>
 		<div class="sort">
 			<div>найдено:3</div>
 			<div>
@@ -32,20 +88,20 @@
 				</div>
 			</div>
 			<div>
-				<button><img src="img/icon-up-dir.svg" alt=""></button>
-				<button><img src="img/icon-down-dir.svg" alt=""></button>
+				<button><img src="img/icon-up-dir.svg" width="11" height="10" alt="Кнопка вверх"></button>
+				<button><img src="img/icon-down-dir.svg" width="11" height="10" alt="Кнопка вниз"></button>
 			</div>
 		</div>
 		<div class="hotels">
 			<div class="hotel">
 				<div class="hotel-img">
-					<img src="img/hotel1.jpg" alt="">
+					<img src="img/hotel1.jpg" width="135" height="90" alt="Изображение гостиницы">
 				</div>
 				<div class="hotel-info">
 					<h3>Amara resort&spa</h3>
 					<div class="hotel-innerwrap">
-						<div class="hotel-type"></div>
-						<div class="hotel-price"></div>
+						<div class="hotel-type">Гостиница</div>
+						<div class="hotel-price">От 4000 р.</div>
 					</div>
 					<div class="hotel-buttons">
 						<a href="#">подробнее</a>
@@ -53,19 +109,24 @@
 					</div>
 				</div>
 				<div class="hotel-rating">
-					<div class="hotel-rating-stars"></div>
-					<div class="hotel-rating-label"></div>
+					<div class="hotel-rating-stars">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+          </div>
+					<div class="hotel-rating-label">рейтинг:8,5</div>
 				</div>
 			</div>
       <div class="hotel">
 				<div class="hotel-img">
-					<img src="img/hotel2.jpg" alt="">
+					<img src="img/hotel2.jpg" width="135" height="90" alt="Изображение гостиницы">
 				</div>
 				<div class="hotel-info">
 					<h3>Desert Quail inn</h3>
 					<div class="hotel-innerwrap">
-						<div class="hotel-type"></div>
-						<div class="hotel-price"></div>
+						<div class="hotel-type">Мотель</div>
+						<div class="hotel-price">от 3000 р.</div>
 					</div>
 					<div class="hotel-buttons">
 						<a href="#">подробнее</a>
@@ -73,28 +134,35 @@
 					</div>
 				</div>
 				<div class="hotel-rating">
-					<div class="hotel-rating-stars"></div>
-					<div class="hotel-rating-label"></div>
+					<div class="hotel-rating-stars">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+          </div>
+					<div class="hotel-rating-label">рейтинг:8,9</div>
 				</div>
 			</div>
       <div class="hotel">
 				<div class="hotel-img">
-					<img src="img/hotel3.jpg" alt="">
+					<img src="img/hotel3.jpg" width="135" height="90" alt="Изображение гостиницы">
 				</div>
 				<div class="hotel-info">
 					<h3>villas at poco diablo</h3>
 					<div class="hotel-innerwrap">
-						<div class="hotel-type"></div>
-						<div class="hotel-price"></div>
+						<div class="hotel-type">Апартаменты</div>
+						<div class="hotel-price">От 2000 р.</div>
 					</div>
 					<div class="hotel-buttons">
 						<a href="#">подробнее</a>
 						<a href="#">забронировать</a>
 					</div>
 				</div>
-				<div class="hotel-rating"> <!--У каждой гостиницы здесь должен быть свой класс? чтобы сделать разный фон со звездами? Логичнее поместить звезды на бэкграунд с повторением?-->
-					<div class="hotel-rating-stars"></div>
-					<div class="hotel-rating-label"></div>
+				<div class="hotel-rating">
+					<div class="hotel-rating-stars">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+            <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+          </div>
+					<div class="hotel-rating-label">рейтинг:9,2</div>
 				</div>
 			</div>
 		</div>
@@ -103,14 +171,14 @@
 		<div>#visitsedona</div>
 		<div >
 			<ul class="social-network">
-				<li><a href="#"><img src="img/twitter.svg"></a></li>
-				<li><a href="#"><img src="img/fb-icon.svg"></a></li>
-				<li><a href="#"><img src="img/youtube.svg"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Значок twitter"></a></li>
+        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Значок facebook"></a></li>
+        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Значок youtube"></a></li>
 			</ul>
 		</div>
 		<div>
       <p> website by </p>
-			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип html academy"></a>
 		</div>
 	</footer>
 	</div>
