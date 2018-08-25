@@ -1,22 +1,53 @@
+body {
+  text-transform: uppercase;
+}
 
+.wrapper {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 100%;
+}
 
+.form-filter {
+  background: #ffffff url("../img/background-form-hotels.jpg");
+  width: 100%;
+}
 
-.social-network>li {
+.form-filter form {
+  width: 100%;
+}
+
+.form-part {
+  display: inline-block;
+}
+
+.form-filter fieldset {
+  display: inline-block;
+  border: 0;
+}
+
+.form-filter ul {
+  padding: 0;
+  margin: 0;
+}
+
+.form-filter li {
+  list-style-type: none;
+}
+
+/* Cтили для ползунка */
+.range {}
+.range-selector {}
+.range-active {}
+
+/* Стили для футера */
+.social-networks li {
   background-color: #81b3d2;
-  display:block;
-
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
-fieldset {
-   border:0 none;
-}
-li {
-    list-style-type: none;
-    background-image:
-}
-.checkbox-on>li {
-background-image: url(img/checkbox-on.svg);
-
-}
-.checkbox {
- background-image: url(img/background-form-hotels.jpg);
- background-color: grey;

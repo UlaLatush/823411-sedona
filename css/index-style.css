@@ -5,7 +5,36 @@
   height: 100%;
   overflow: hidden; /* без этого не работает margin-top у welcome-img, что-то связанное с Margin Collapse */
 }
+.body {
+  text-transform: uppercase;
+}
+.main-title {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: white;
+}
+.site-navigation {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.site-navigation a {
+  color: black;
+}
+.site-navigation a:hover {
+  color:#81b3d2;
+}
+.site-navigation a:visited {
+  color: #bdbbbc;
+}
+.reasons {
+  color:#414141;
+  font-size: 14px;
+  line-height: 21px;
 
+
+}
 img.welcome-img {
   display: block;
   margin-left: auto;
@@ -19,9 +48,7 @@ img.polygon-img {
   margin-right: auto;
 }
 
-.main-title {
-  background-color: white;
-}
+
 
 .container-grid {}
 
@@ -39,7 +66,7 @@ img.polygon-img {
   color: #ffffff;
 }
 
-.social-networks > li {
+.social-networks li {
   background-color: #81b3d2;
   width: 46px;
   height: 46px;

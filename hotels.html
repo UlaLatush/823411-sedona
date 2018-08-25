@@ -21,62 +21,64 @@
 		</nav>
 	</header>
 	<main>
-  <div class="form">
-  <form class="filter" method="get" action="https:echo.htmlacademy.ru">
-    <fieldset>
-      <legend>Инфраструктура</legend>
-  <ul>
-    <li>
-      <input type="checkbox" name="pool"  id="filter-pool">
-      <label for="filter-pool">
-        Бассейн
-      </label>
-    </li>
-    <li>
-      <input type="checkbox" name="parking"  id="filter-parking">
-      <label for="filter-parking">
-        Парковка
-      </label>
-    </li>
-    <li>
-      <input type="checkbox" name="wi-fi"  id="filter-wi-fi">
-      <label for="filter-wi-fi">
-        wi-fi
-      </label>
-    </li>
-  </ul>
-   </fieldset>
-   <fieldset>
-     <legend>Тип жилья</legend>
- <ul class="checkbox-on">
-   <li>
-     <input type="checkbox" name="hotel"  id="filter-hotel">
-     <label for="filter-hotel">
-       Гостиница
-     </label>
-   </li>
-   <li>
-     <input type="checkbox" name="motel"  id="filter-motel">
-     <label for="filter-motel">
-       Мотель
-     </label>
-   </li>
-   <li>
-     <input type="checkbox" name="apartment"  id="filter-apartment">
-     <label for="filter-apartment">
-       Апартаменты
-     </label>
-   </li>
- </ul>
-  </fieldset>
-</form>
-  <label>
-  <input type="range" name="radio" min="0" max="3000" step="1">
-</label>
+    <div class="form-filter">
+      <form action="https//echo.htmlacademy.ru" method="get">
+        <div class="form-part">
+          <!-- Выбор инфраструктуры -->
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="filter-pool">
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                <label for="filter-wi-fi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <!-- Выбор типа жилья -->
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="filter-hotel">
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="filter-motel">
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="filter-apartment">
+                <label for="filter-apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="form-part">
+          <!-- Ввод диапазона цены -->
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend><br>
+            <label>От <input type="text" name="min-price" id="min-price" value="0"></label>
+            <label>До <input type="text" name="max-price" id="max-price" value="3000"></label>
+          </fieldset>
+          <!-- Декоративный ползунок -->
+          <div class="range">
+            <div class="range-selector"></div>
+            <div class="range-active"></div>
+            <div class="range-selector"></div>
+          </div>
 
-
-
-</div>
+          <input type="submit" value="Показать">
+        </div>
+      </form>
+    </div>
 		<div class="sort">
 			<div>найдено:3</div>
 			<div>
@@ -98,7 +100,7 @@
 					<img src="img/hotel1.jpg" width="135" height="90" alt="Изображение гостиницы">
 				</div>
 				<div class="hotel-info">
-					<h3>Amara resort&spa</h3>
+					<h3>Amara resort spa</h3>
 					<div class="hotel-innerwrap">
 						<div class="hotel-type">Гостиница</div>
 						<div class="hotel-price">От 4000 р.</div>
@@ -169,20 +171,18 @@
 	</main>
   <footer>
 		<div>#visitsedona</div>
-		<div >
-			<ul class="social-network">
-        <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Значок twitter"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Значок facebook"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Значок youtube"></a></li>
+		<div>
+			<ul class="social-networks">
+				<li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Значок twitter"></a></li>
+				<li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Значок facebook"></a></li>
+				<li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Значок youtube"></a></li>
 			</ul>
 		</div>
 		<div>
-      <p> website by </p>
+      <p>website by</p>
 			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="Логотип html academy"></a>
 		</div>
 	</footer>
 	</div>
-  </div>
-
   </body>
   </html>
