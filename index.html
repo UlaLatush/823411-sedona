@@ -2,65 +2,65 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <!--link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet"-->
     <link rel="stylesheet" href="css/normalize.css">
     <link href='css/index-style.css' rel='stylesheet' type='text/css'>
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-	<div class="wrapper"> <!-- Чтобы контент размещался по центру страницы и отбрасывал тень -->
+	<div class="wrapper welcome-page"> <!-- Чтобы контент размещался по центру страницы и отбрасывал тень -->
 	<header class="main-header">
-		<nav class="main-navigation">
+		<nav>
 			<ul class="site-navigation">
 				<li><a href="#">информация</a></li>
-				<li><a href="#">фото и видео</a></li>
+				<li><a href="photos.html">фото и видео</a></li>
 			</ul>
 			<img src="img/logo.png" width="140" height="71" alt="Логотип">  <!-- Как делать такое меню? Есть ли смысл разрезать его отдельными дивами или не надо? -->
 			<ul class="site-navigation">
-				<li><a href="#">карта штата</a></li>
-				<li><a href="#">гостиницы</a></li>
+				<li><a href="map.html">карта штата</a></li>
+				<li><a href="hotels.html">гостиницы</a></li>
 			</ul>
 		</nav>
-    <img src="img/welcome.png" width="459" height="353" alt="Фотография Седоны" class="welcome-img">
-    <img src="img/polygon.png" width="1200" height="59" alt="Элемент дизайна" class="polygon-img">
+    <img src="img/welcome.png" class="welcome-img" width="459" height="353" alt="Фотография Седоны">
+    <img src="img/polygon.png" class="polygon-img" width="1200" height="59" alt="Элемент дизайна">
 	</header>
 	<main>
 		<article>
 			<header class="main-title"><!-- Нужен ли здесь хедер? -->
 				<h1>седона - это небольшой городок в аризоне,<br> заслуживающий большего! </h1>
-				<p class="reasons">рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
+				<p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
 			</header>
 			<div class="container-grid">
 				<div class="row">
 					<div class="col-1-3 colblue">
 						<section>
 							<h3>настоящий <br> городок</h3>
-							<p><div>-N1-</div><br>седона - не атракцион для туристов,<br>  там течет своя жизнь</p><!-- N1 в див. -->
+							<span>— №1 —</span>
+              <p>седона - не атракцион для туристов,<br>там течет своя жизнь</p>
 						</section>
 					</div>
 					<div class="col-2-3"><img src="img/sedona-1.jpg" width="800" height="256" alt="Фотография города"></div>
 				</div>
 				<div class="row">
-					<div class="col-1-3">
+					<div class="col-1-3 colwhite">
 						<img src="img/icon-1.svg" width="75" height="72" alt="Значок дома">
 						<section>
 							<h3>жилье</h3>
-              <div>-N2-</div>
-							<p class="reasons">рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
+							<p>рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
 						</section>
 					</div>
-					<div class="col-1-3">
+					<div class="col-1-3 colwhite">
 						<img src="img/icon-2.svg" width="64" height="76" alt="Значок бургера">
 						<section>
 							<h3>еда</h3>
-              <div>-N3-</div>
-							<p class="reasons">всегда заказывайте фирменный бургер,<br>  вы не разочаруетесь!</p>
+							<p>всегда заказывайте фирменный бургер,<br>  вы не разочаруетесь!</p>
 						</section>
 					</div>
-					<div class="col-1-3">
+					<div class="col-1-3 colwhite">
 						<img src="img/icon-3.svg" width="74" height="70" alt="Значок подарка">
 						<section>
 							<h3>сувениры</h3>
-							<p class="reasons">не только китайского, но и местного<br> производства!</p>
+							<p>не только китайского, но и местного<br> производства!</p>
 						</section>
 					</div>
 				</div>
@@ -69,62 +69,70 @@
 					<div class="col-1-3 colblue">
 						<section>
 							<h3>там есть мост дъявола</h3>
+              <span>— №2 —</span>
 							<p>да, по нему можно пройти! если конечно<br> вы осмелитесь</p>
 						</section>
 					</div>
 				</div>
         <section>
+          <div class="col-1-3 colgrey">
           <h3>небольшая <br> площадь</h3>
-          <div>-N3-</div>
-          <p class="reasons">все достопримечательности <br> находятся очень близко</p>
+          <div>— №3 —</div>
+          <p>все достопримечательности <br> находятся очень близко</p>
+        </div>
         </section>
         <section>
+          <div class="col-1-3 colgrey">
           <h3>красивая <br> дорога</h3>
-          <div>-N4-</div>
-          <p class="reasons">ехвть в седону из лас-вегаса совсем<br>  не скучно</p>
+          <div>— №4 -</div>
+          <p>ехать в седону из лас-вегаса совсем<br>  не скучно</p>
+          </div>
         </section>
         <section>
+          <div class="col-1-3 colgrey">
           <h3>мало <br> туристов</h3>
-          <div>-N5-</div>
-          <p class="reasons">большинство едет в гранд каньон <br> и толпится там</p>
+          <div>— №5 —</div>
+          <p>большинство едет в гранд каньон <br> и толпится там</p>
+          </div>
         </section>
 			</div>
 		</article>
-		<div class="container-form">
-			<div class="form-title">
+		<div class="search-container">
+			<div class="search-title">
 				<p>заинтересовались?</p>
 				<p>укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			</div>
-			<div class="form-map">
-				<img src="img/map.jpg" width="768" height="593" alt="Карта Седоны">
+			<div class="search-map">
+				<img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
 			</div>
-			<div class="form-search">
+			<div class="search-form">
+        <h3>поиск гостиницы в седоне</h3>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <!-- Даты заезда и выезда -->
-          <label for="date-arrive">Дата заезда</label>
+          <label for="date-arrive">Дата заезда:</label>
           <input type="text" id="date-arrive" name="date-arrive" value="2017-04-01">
           <br>
-          <label for="date-departure">Дата выезда</label>
+          <label for="date-departure">Дата выезда:</label>
           <input type="text" id="date-departure" name="date-departure" value="2017-07-04">
           <br>
           <!-- Кол-во взрослых -->
-          <label for="adults">Взрослые</label>
+          <label for="adults">Взрослые:</label>
           <button type="button" name="adults-minus">минус</button>
           <input type="text" id="adults" name="adults" value="2">
           <button type="button" name="adults-plus">плюс</button>
           <!-- Кол-во детей -->
-          <label for="children">Дети</label>
+          <label for="children">Дети:</label>
           <button type="button" name="children-minus">минус</button>
           <input type="text" id="children" name="children" value="0">
           <button type="button" name="children-plus">плюс</button>
           <br>
-          <input type="submit" value="Найти">
+          <input type="submit" value="НАЙТИ" class="search-button">
         </form>
 			</div>
 		</div>
 	</main>
 	<footer>
-		<div>#visitsedona</div>
+		<div class="tag">#visitsedona</div>
 		<div>
 			<ul class="social-networks">
 				<li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Значок twitter"></a></li>
@@ -132,7 +140,7 @@
 				<li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Значок youtube"></a></li>
 			</ul>
 		</div>
-		<div>
+		<div class="logo-html">
       <p>website by</p>
 			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип html academy"></a>
 		</div>
