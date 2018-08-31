@@ -13,12 +13,12 @@
 		<nav>
 			<ul class="site-navigation">
 				<li><a href="#">информация</a></li>
-				<li><a href="photos.html">фото и видео</a></li>
+				<li><a href="#">фото и видео</a></li>
 			</ul>
-			<img src="img/logo.png" width="140" height="71" alt="Логотип">  <!-- Как делать такое меню? Есть ли смысл разрезать его отдельными дивами или не надо? -->
+      <div class="navigation-logo"><img src="img/logo.png" width="140" height="71" alt="Логотип"></div>
 			<ul class="site-navigation">
-				<li><a href="map.html">карта штата</a></li>
-				<li><a href="hotels.html">гостиницы</a></li>
+				<li><a href="#">карта штата</a></li>
+				<li><a href="#">гостиницы</a></li>
 			</ul>
 		</nav>
     <img src="img/welcome.png" class="welcome-img" width="459" height="353" alt="Фотография Седоны">
@@ -49,6 +49,7 @@
 							<p>рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
 						</section>
 					</div>
+          <div class="row">
 					<div class="col-1-3 colwhite">
 						<img src="img/icon-2.svg" width="64" height="76" alt="Значок бургера">
 						<section>
@@ -56,6 +57,8 @@
 							<p>всегда заказывайте фирменный бургер,<br>  вы не разочаруетесь!</p>
 						</section>
 					</div>
+        </div>
+        <div class="row">
 					<div class="col-1-3 colwhite">
 						<img src="img/icon-3.svg" width="74" height="70" alt="Значок подарка">
 						<section>
@@ -63,6 +66,7 @@
 							<p>не только китайского, но и местного<br> производства!</p>
 						</section>
 					</div>
+        </div>
 				</div>
 				<div class="row">
 					<div class="col-2-3"><img src="img/sedona-2.jpg" width="800" height="256" alt="Фотография ландшафта Седоны"></div>
@@ -74,28 +78,30 @@
 						</section>
 					</div>
 				</div>
-        <section>
+        <div class="row">
           <div class="col-1-3 colgrey">
-          <h3>небольшая <br> площадь</h3>
-          <div>— №3 —</div>
-          <p>все достопримечательности <br> находятся очень близко</p>
+            <section>
+              <h3>небольшая <br> площадь</h3>
+              <div>— №3 —</div>
+              <p>все достопримечательности <br> находятся очень близко</p>
+          </section>
         </div>
-        </section>
-        <section>
-          <div class="col-1-3 colgrey">
-          <h3>красивая <br> дорога</h3>
-          <div>— №4 -</div>
-          <p>ехать в седону из лас-вегаса совсем<br>  не скучно</p>
-          </div>
-        </section>
-        <section>
-          <div class="col-1-3 colgrey">
-          <h3>мало <br> туристов</h3>
-          <div>— №5 —</div>
-          <p>большинство едет в гранд каньон <br> и толпится там</p>
-          </div>
-        </section>
-			</div>
+        <div class="col-1-3 colgrey">
+          <section>
+            <h3>красивая <br> дорога</h3>
+            <div>— №4 -</div>
+            <p>ехать в седону из лас-вегаса совсем<br>  не скучно</p>
+         </section>
+       </div>
+       <div class="col-1-3 colgrey">
+         <section>
+           <h3>мало <br> туристов</h3>
+           <div>— №5 —</div>
+           <p>большинство едет в гранд каньон <br> и толпится там</p>
+         <section>
+       </div>
+      </div>
+		</div>
 		</article>
 		<div class="search-container">
 			<div class="search-title">
@@ -108,24 +114,27 @@
 			<div class="search-form">
         <h3>поиск гостиницы в седоне</h3>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <!-- Даты заезда и выезда -->
-          <label for="date-arrive">Дата заезда:</label>
-          <input type="text" id="date-arrive" name="date-arrive" value="2017-04-01">
-          <br>
-          <label for="date-departure">Дата выезда:</label>
-          <input type="text" id="date-departure" name="date-departure" value="2017-07-04">
-          <br>
-          <!-- Кол-во взрослых -->
-          <label for="adults">Взрослые:</label>
-          <button type="button" name="adults-minus">минус</button>
-          <input type="text" id="adults" name="adults" value="2">
-          <button type="button" name="adults-plus">плюс</button>
-          <!-- Кол-во детей -->
-          <label for="children">Дети:</label>
-          <button type="button" name="children-minus">минус</button>
-          <input type="text" id="children" name="children" value="0">
-          <button type="button" name="children-plus">плюс</button>
-          <br>
+          <!--fieldset-->
+            <!-- Даты заезда и выезда -->
+            <label for="date-arrive">Дата заезда:</label>
+            <input type="text" id="date-arrive" name="date-arrive" value="2017-04-01">
+            <br>
+            <label for="da te-departure">Дата выезда:</label>
+            <input type="text" id="date-departure" name="date-departure" value="2017-07-04">
+            <br>
+            <!-- Кол-во взрослых -->
+            <label for="adults">Взрослые:</label>
+            <button type="button" name="adults-minus">минус</button>
+            <input type="text" id="adults" name="adults" value="2">
+            <button type="button" name="adults-plus">плюс</button>
+            <br>
+            <!-- Кол-во детей -->
+            <label for="children">Дети:</label>
+            <button type="button" name="children-minus">минус</button>
+            <input type="text" id="children" name="children" value="0">
+            <button type="button" name="children-plus">плюс</button>
+          <!--/fieldset-->
+            <br>
           <input type="submit" value="НАЙТИ" class="search-button">
         </form>
 			</div>
@@ -133,13 +142,13 @@
 	</main>
 	<footer>
 		<div class="tag">#visitsedona</div>
-		<div>
+
 			<ul class="social-networks">
 				<li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Значок twitter"></a></li>
 				<li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Значок facebook"></a></li>
 				<li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Значок youtube"></a></li>
 			</ul>
-		</div>
+	
 		<div class="logo-html">
       <p>website by</p>
 			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип html academy"></a>
