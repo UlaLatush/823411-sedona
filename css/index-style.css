@@ -13,17 +13,29 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin: 0;
 }
 a {
   text-decoration: none;
 }
-
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 /* Стили для оберток */
 .wrapper {
   width: 1200px;
   height: 100%;
-  overflow: hidden; /* без этого не работает margin-top у welcome-img, что-то связанное с Margin Collapse */
+  overflow: hidden;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow:
+  -5px 0 10px rgba(0,0,0,0.5),
+   5px 0 10px rgba(0,0,0,0.5);
 }
 .welcome-page {
   background: #ffffff url("../img/background.jpg");
@@ -32,6 +44,23 @@ a {
 .hotels-page {
   background: #ffffff url("../img/background-form-hotels.jpg");
   background-repeat: no-repeat;
+}
+.hello {
+  position: relative;
+  height: 510px;
+}
+.hello::after {
+  /*background: #ffffff url("../img/polygon.png");*/
+  background-image: url("../img/polygon.png");
+  background-repeat: no-repeat;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 59px;
+  content: "";
+}
+.hello img {
+  margin-top: 72px;
 }
 
 /* Навигация */
@@ -96,15 +125,20 @@ img.polygon-img {
 .main-title {
   background-color: white;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .main-title h1 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
+  padding-bottom: 15px;
 }
 .main-title p {
   font-size: 14px;
   line-height: 26px;
+  margin: 0;
 }
 
 /****** Сетка *****/
@@ -124,7 +158,11 @@ img.polygon-img {
 
 .col-1-3 {}
 
-.col-2-3 {}
+.col-2-3 {
+  width:800px;
+  height:256px;
+  text-align: center;
+}
 
 /* Голубая ячейка */
 .colblue {
@@ -133,16 +171,21 @@ img.polygon-img {
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
+  padding-top: 46px;
+  padding-bottom: 58px;
 }
 .colblue h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  margin-bottom: 26px;
+  margin-top: 0;
 }
 .colblue p,
 .colblue span {
   font-size: 14px;
   line-height: 21px;
+  margin-bottom: 23px;
 }
 
 /* Белая ячейка */
@@ -151,12 +194,15 @@ img.polygon-img {
   height: 330px;
   background-color: #ffffff;
   text-align: center;
+  padding-top: 57px;
+  padding-bottom: 83px;
 }
 .colwhite h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
   color: #000000;
+
 }
 .colwhite p,
 .colwhite span {
@@ -172,11 +218,15 @@ img.polygon-img {
   line-height: 21px;
   background-color: #eeeeee;
   text-align: center;
+  padding-top: 47px;
+  padding-bottom: 57px;
 }
 .colgrey h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
+  margin-bottom: 26px;
+  margin-top:0;
 }
 
 /* Форма поиска на первой странице */
@@ -192,10 +242,12 @@ img.polygon-img {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  margin-top: 55px;
 }
 .search-title p:last-child {
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 50px;
 }
 
 .search-map {}
@@ -270,16 +322,48 @@ footer {
   margin-right: 253px;
 }
 .social-networks {
+  display: flex;
   margin-right: 225px;
   padding:0px;
-
 }
+.social-networks li {
+  background-color: #81b3d2;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 5px;
+  list-style-type: none;
+}
+.social-networks li:hover,
+.social-networks li:focus {
+  background-color: #669ec0;
+}
+.social-networks li:active {
+  background-color: #5496bd;
+}
+.social-networks li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.social-networks:active path {
+  fill: #88b6d1;
+}
+
 .logo-html {
   display: flex;
   margin-right: 100px;
 }
 .logo-html p {
   margin-right: 5px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  flex-shrink: 0;
+}
 }
 .tag {
   font-size: 21px;
@@ -287,23 +371,21 @@ footer {
   font-weight: bold;
   color: #000000;
 }
-
-.social-networks li {
-  background-color: #81b3d2;
-  width: 46px;
-  height: 46px;
-  line-height: 46px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
+.logo-html a {
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  display: block;
+  width:115px;
+  height: 41px;
 }
-
-.logo-html p {
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
+.logo-html a:hover {
+  background: url("../img/logo-blue.svg") no-repeat;
+  display: block;
+  width:115px;
+  height: 41px;
 }
-
+.logo-html a:active {
+  background: url("../img/logo-grey.svg");
+}
 
 /************** HOTELS PAGE CSS ******************/
 
@@ -479,7 +561,7 @@ a.book:active {
   text-align: center;
   vertical-align: middle;
 }
-/*-----Стили для сетки-----*/
+
 
 
 /* сетка для второй страницы */
@@ -517,26 +599,24 @@ a.book:active {
   margin-right: 20px;
 }
 .filter-toolbar{
-  /*display: flex;*/
-  min-height: 74px;
-  line-height: 74px;
-  vertical-align: middle;
+  display: flex;
+  min-height: 87px;
+  align-items: center;
 }
 .result {
-  margin-left: 73px;
-  margin-right: 30px;
-  margin-top: 30px;
+ margin-right: 47px;
+ margin-left: 73px;
 }
 .sort {
-  margin-right: 37px;
-  margin-top: 38px;
+margin-right: 36px;
 }
 .sort-type {
-  width: 250px;
+  margin-right: 500px;
+}
+.sort-type a {
+  margin-right: 31px;
 }
 .sort-direction {
-  margin-right: 73px;
-  margin-left: 500px;
-  margin-top: 38px;
+
 
 }
