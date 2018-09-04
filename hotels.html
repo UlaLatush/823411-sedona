@@ -9,21 +9,23 @@
   </head>
   <body>
   <div class="wrapper hotels-page">
-  <header class="main-header">
-		<nav>
-			<ul class="site-navigation">
-				<li><a href="#">информация</a></li>
-				<li><a href="#">фото и видео</a></li>
-			</ul>
-			<a href="https://htmlacademy.ru">
-        <img src="img/logo.png" width="140" height="71" alt="Логотип">
-      </a>
-			<ul class="site-navigation">
-				<li><a href="#">карта штата</a></li>
-				<li><a href="#">гостиницы</a></li>
-			</ul>
-		</nav>
-	</header>
+    <header class="main-header">
+  		<nav>
+  			<ul class="site-navigation">
+  				<li><a href="#">информация</a></li>
+  				<li><a href="#">фото и видео</a></li>
+  			</ul>
+        <div class="navigation-logo">
+          <a href="https://htmlacademy.ru">
+          <img src="img/logo.png" width="140" height="71" alt="Логотип">
+          </a>
+        </div>
+  			<ul class="site-navigation">
+  				<li><a href="#">карта штата</a></li>
+  				<li><a href="#">гостиницы</a></li>
+  			</ul>
+  		</nav>
+  	</header>
 	<main>
     <div class="filter-form">
       <form action="https//echo.htmlacademy.ru/" method="get">
@@ -69,15 +71,19 @@
           <!-- Ввод диапазона цены -->
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend><br>
-            <label>От <input type="text" name="min-price" id="min-price" value="0"></label>
-            <label>До <input type="text" name="max-price" id="max-price" value="3000"></label>
+            <div class="price-controls">
+            <label class="min-price">От <input type="text" name="min-price" id="min-price" value="0"></label>
+            <label class="max-price">До <input type="text" name="max-price" id="max-price" value="3000"></label>
+            </div>
           </fieldset>
           <!-- Декоративный ползунок -->
-          <div class="range">
-            <div class="range-selector"></div>
-            <div class="range-active"></div>
-            <div class="range-selector"></div>
-          </div>
+          <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
           <input type="submit" value="ПОКАЗАТЬ" class="filter-button">
         </div>
       </form>

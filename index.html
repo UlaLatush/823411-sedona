@@ -117,7 +117,7 @@
 				<img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
 			</div>
 			<div class="search-form">
-        <h3>поиск гостиницы в седоне</h3>
+        <h3><button type="button" name="search-form-button" class="search-form-button">поиск гостиницы в седоне</button></h3>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <!--fieldset-->
             <!-- Даты заезда и выезда -->
@@ -129,16 +129,21 @@
             <br>
             <!-- Кол-во взрослых -->
             <label for="adults">Взрослые:</label>
-            <button type="button" name="adults-minus">минус</button>
-            <input type="text" id="adults" name="adults" value="2">
-            <button type="button" name="adults-plus">плюс</button>
+            <span class="adjustment">
+              <button type="button" name="adults-minus" class="minus">минус</button>
+              <input type="text" id="adults" name="adults" value="2">
+              <button type="button" name="adults-plus" class="plus">плюс</button>
+            </span>
+            <br>
             <br>
             <!-- Кол-во детей -->
             <label for="children">Дети:</label>
-            <button type="button" name="children-minus">минус</button>
-            <input type="text" id="children" name="children" value="0">
-            <button type="button" name="children-plus">плюс</button>
+            <span class="adjustment">
+              <button type="button" name="children-minus" class="minus">минус</button>
+              <input type="text" id="children" name="children" value="0">
+              <button type="button" name="children-plus" class="plus">плюс</button>
           <!--/fieldset-->
+            </span>
             <br>
           <input type="submit" value="НАЙТИ" class="search-button">
         </form>
