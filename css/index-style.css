@@ -387,15 +387,72 @@ img.polygon-img {
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
-  margin-left: -4px;
   border: 0;
   text-align: center;
   padding: 0;
 }
-.adjustment {
+.adjustment-adults {
+  display: flex;
+  justify-content: space-between;
   margin-left: 38px;
   font-weight: bold;
   font-size: 14px;
+
+}
+.adjustment-adults label {
+  margin-left: -38px;
+  min-width: 117px;
+}
+.adjustment-children {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 38px;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 115px;
+
+}
+.adjustment-children label {
+  margin-right: 26px;
+  margin-left: 32px;
+
+}
+.quantity {
+  display: flex;
+
+}
+.search-field {
+ display: flex;
+ flex-direction: column;
+}
+.arriving {
+  margin-bottom: 29px;
+}
+.arriving label {
+ min-width: 119px;
+ margin-right: 19px;
+}
+.departure {
+  margin-bottom: 29px;
+}
+.search-field input {
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: 0;
+  outline: 0;
+}
+.search-field input:hover {
+  width: 346px;
+  height: 38px;
+  background-color: #ebebeb;
+  border: 0;
+}
+.search-field input:focus {
+  width: 346px;
+  height: 38px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
 }
 /* Футер */
 footer {
@@ -434,7 +491,8 @@ footer {
 .social-networks li:active {
   background-color: #5496bd;
 }
-.social-networks li a {
+
+.social-networks a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -479,14 +537,40 @@ footer {
 /* Фильтр гостиниц */
 .filter-form {
   height: 220px;
+  display: flex;
+  justify-content:space-around;
+  padding: 28px 73px;
 }
-.filter-form-part {
-  display: inline-block;
+.filter-form-col-1 {
+  width: 241px;
+
 }
+.filter-form-col-1 li {
+  margin-bottom: 21px;
+}
+.filter-form-col-1 legend {
+  margin-bottom: 25px;
+}
+.filter-form-col-2 {
+  width: 288px;
+}
+.filter-form-col-2 li{
+  margin-bottom: 21px;
+}
+.filter-form-col-2 legend {
+  margin-bottom: 25px;
+}
+.filter-form-col-3 {
+  width: 528px;
+  padding-left: 200px;
+}
+
 .filter-form fieldset {
-  display: inline-block;
   border: 0;
+  padding: 0;
+  margin: 0;
 }
+
 .filter-form legend {
   font-size: 16px;
   line-height: 21px;
@@ -747,10 +831,13 @@ a.book:active {
  display: flex;
  flex-direction: column;
  justify-content: center;
+ border-bottom: 1px solid #e5e5e5;
 }
 .hotel {
   border: 1px solid #e5e5e5;
+  border-bottom: none;
   display: flex;
+
 }
 .hotel-img {
   margin-left: 73px;
