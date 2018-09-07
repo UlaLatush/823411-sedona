@@ -119,37 +119,47 @@
 			<div class="search-form">
         <h3><button type="button" name="search-form-button" class="search-form-button">поиск гостиницы в седоне</button></h3>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <!--fieldset-->
-            <!-- Даты заезда и выезда -->
+
             <div class="search-field">
-            <div class="arriving">
-            <label for="date-arrive">Дата заезда:</label>
-            <input type="text" id="date-arrive" name="date-arrive" value="2017-04-01">
-            </div>
-            <div class="departure">
-            <label for="date-departure">Дата выезда:</label>
-            <input type="text" id="date-departure" name="date-departure" value="2017-07-04">
-            </div>
-            <!-- Кол-во взрослых -->
-            <div class="quantity">
-              <div class="adjustment-adults">
-                <label for="adults">Взрослые:</label>
-                <button type="button" name="adults-minus" class="minus">минус</button>
-                <input type="text" id="adults" name="adults" value="2">
-                <button type="button" name="adults-plus" class="plus">плюс</button>
+              <!-- Даты заезда и выезда -->
+              <div class="search-date">
+                <label for="date-arrive">Дата заезда:</label>
+                <div class="calendar">
+                  <input type="text" id="date-arrive" name="date-arrive" value="2017-04-01">
+                  <button class="button-calendar" type="button"></button>
+                </div>
               </div>
-            <div class="adjustment-children">
-            <!-- Кол-во детей -->
-              <label for="children">Дети:</label>
-              <button type="button" name="children-minus" class="minus">минус</button>
-              <input type="text" id="children" name="children" value="0">
-              <button type="button" name="children-plus" class="plus">плюс</button>
+              <div class="search-date">
+                <label for="date-departure">Дата выезда:</label>
+                <div class="calendar">
+                  <input type="text" id="date-departure" name="date-departure" value="2017-07-04">
+                  <button class="button-calendar" type="button"></button>
+                </div>
+              </div>
+
+              <div class="quantity">
+                <div class="adjustment-adults">
+                  <!-- Кол-во взрослых -->
+                  <label for="adults">Взрослые:</label>
+                  <div class="button-alter">
+                    <button type="button" name="adults-minus" class="minus">минус</button>
+                    <input type="text" id="adults" name="adults" value="2">
+                    <button type="button" name="adults-plus" class="plus">плюс</button>
+                  </div>
+                </div>
+                <div class="adjustment-children">
+                  <!-- Кол-во детей -->
+                  <label for="children">Дети:</label>
+                  <div class="button-alter">
+                    <button type="button" name="children-minus" class="minus">минус</button>
+                    <input type="text" id="children" name="children" value="0">
+                    <button type="button" name="children-plus" class="plus">плюс</button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <!--/fieldset-->
-        </div>
             <br>
-          <input type="submit" value="НАЙТИ" class="search-button">
+            <input type="submit" value="НАЙТИ" class="search-button">
         </form>
 			</div>
 		</div>
