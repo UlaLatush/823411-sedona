@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href='css/index-style.css' rel='stylesheet' type='text/css'>
+    <script src="scripts/script.js"></script>
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -117,8 +118,8 @@
 				<img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
 			</div>
 			<div class="search-form">
-        <h3><button type="button" name="search-form-button" class="search-form-button">поиск гостиницы в седоне</button></h3>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <h3><button type="button" name="search-form-button" class="search-form-button" onclick="openForm()">поиск гостиницы в седоне</button></h3>
+        <form action="https://echo.htmlacademy.ru/" method="post" id="search-form" style="display: none;">
 
             <div class="search-fields">
               <!-- Даты заезда и выезда -->
@@ -154,7 +155,7 @@
                 </div>
               </div>
             </div>
-            <input type="submit" value="НАЙТИ" class="search-button">
+            <input type="button" value="НАЙТИ" class="search-button" onclick="validateForm()">
         </form>
 			</div>
 		</div>

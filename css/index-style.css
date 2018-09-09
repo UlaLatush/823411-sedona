@@ -481,6 +481,7 @@ img.polygon-img {
   font-family: "PT Sans", Arial, sans-serif;
   padding:0px;
   border: none;
+  outline: 0;
 }
 .search-button:focus,
 .search-button:hover {
@@ -571,16 +572,16 @@ img.polygon-img {
   vertical-align: middle;
 }
 .logo-html a {
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  background: url("../img/logo-black.png") no-repeat;
   display: block;
   width: 115px;
   height: 49px;
 }
 .logo-html a:hover {
-  background: url("../img/logo-blue.svg") no-repeat;
+  background: url("../img/logo-blue.png") no-repeat;
 }
 .logo-html a:active {
-  background: url("../img/logo-grey.svg") no-repeat;
+  background: url("../img/logo-gray.png") no-repeat;
 }
 
 /************** HOTELS PAGE CSS ******************/
