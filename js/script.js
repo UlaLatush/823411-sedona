@@ -1,10 +1,10 @@
 function openForm() {
   var x = document.forms[0];
 
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (x.classList.contains("search-form-open")) {
+    x.classList.remove("search-form-open");
   } else {
-    x.style.display = "none";
+    x.classList.add("search-form-open");
   }
 }
 
