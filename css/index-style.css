@@ -35,12 +35,12 @@ a {
    3px 0 15px rgba(0,0,0,0.1);
 }
 .welcome-page {
-  background: #ffffff url("../img/background.jpg");
+  background: #273a41 url("../img/background.jpg");
   background-repeat: no-repeat;
   position: relative;
 }
 .hotels-page {
-  background: #ffffff url("../img/background-form-hotels.jpg");
+  background: #293c43 url("../img/background-form-hotels.jpg");
   background-repeat: no-repeat;
 }
 .hello {
@@ -146,7 +146,7 @@ img.polygon-img {
 /****** Сетка первой страницы *****/
 .container-grid {
   min-width: 1200px;
-  min-height: 1100px;
+  /*min-height: 1100px;*/
 }
 .row {
   display:flex;
@@ -249,6 +249,7 @@ img.polygon-img {
   text-align: center;
   height: 291px;
   padding-top: 51px;
+  background-color: #ffffff;
 }
 .search-title p:first-child {
   font-size: 30px;
@@ -267,7 +268,7 @@ img.polygon-img {
 
 .search-form {
   width: 568px;
-  top: 204px;
+  top: 205px;
   left: 316px;
   position: absolute;
   background-color: white;
@@ -285,7 +286,6 @@ img.polygon-img {
   margin: 0;
 }
 .search-form-close {
-/*.search-form form {*/
   display: none;
   text-align: left;
   padding: 55px;
@@ -298,10 +298,8 @@ img.polygon-img {
 }
 .search-form label {
   font-size: 14px;
-  line-height: 38px;
   font-weight: bold;
   color: #000000;
-  vertical-align: middle;
 }
 
 .search-form-button {
@@ -341,8 +339,15 @@ img.polygon-img {
   justify-content: space-between;
 }
 
-.search-col1 {}
+.search-col1 {
+  min-height: 38px;
+  line-height: 38px;
+  vertical-align: middle;
+}
 .search-col2 {
+  min-height: 38px;
+  line-height: 38px;
+  vertical-align: middle;
   width: 346px;
 }
 
@@ -390,8 +395,10 @@ img.polygon-img {
   position: absolute;
   right: 9px;
   top: 8px;
+  outline: 0;
 }
-.button-calendar:hover {
+.button-calendar:hover,
+.button-calendar:focus {
   width: 21px;
   height: 22px;
   background: url("../img/calendar-black.png") center;
@@ -546,6 +553,7 @@ img.polygon-img {
   margin-left: 3px;
   margin-bottom: 6px;
   list-style-type: none;
+
 }
 .social-networks li:hover,
 .social-networks li:focus {
@@ -822,8 +830,6 @@ input:checked + label:before {
 }
 .sort a {
   margin-right: 31px;
-}
-.sort a {
   color: #cacaca;
   border-bottom: 1px dashed #81b3d2;
 }
@@ -855,13 +861,14 @@ input:checked + label:before {
   border: none;
   cursor: pointer;
   overflow: hidden;
-  outline: none;
+  outline: 0;
   padding: 0;
 }
 .asc {
   background-image: url("../img/icon-up-dir.png");
 }
-.asc:hover {
+.asc:hover,
+.asc:focus {
   background-image: url("../img/icon-up-dir-black.png");
 }
 .asc:active {
@@ -871,7 +878,8 @@ input:checked + label:before {
   background-image: url("../img/icon-down-dir.png");
   margin-left: 8px;
 }
-.desc:hover {
+.desc:hover,
+.desc:focus {
   background-image: url("../img/icon-down-dir-black.png");
 }
 .desc:active {
